@@ -1,0 +1,72 @@
+section{
+    clip-path: polygon(100% 0, 100% 33%, 25% 100%, 0 100%, 0 0);
+    background: rgb(9,121,99);
+    background: linear-gradient(90deg, rgba(9,121,99,1) 35%, rgba(0,255,145,1) 100%);
+    width: 100%;
+    height: 100vh;
+    z-index: -1000;
+}
+#side-bar{
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(2, 2, 2, 0.8);
+    transition: 0.6s;
+    z-index: 1000;
+}
+#icon{
+    color: #ffffffa1;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.4s;
+}
+#icon:hover{
+    background-color: rgba(2, 2, 2, 0.778);
+    color: #ffffff;
+}
+.nav .nav-link{
+    color: #ffffff;
+}
+.nav .nav-link:hover{
+    background-color: rgba(2, 2, 2, 0.778);
+}
+.arrow-list{
+    transform: rotate(90deg);
+}
+.arrow-list.active{
+    transform: rotate(0deg);
+    animation-name: arrow;
+    animation-duration: 0.4s;
+}
+.sub-menu{
+    height: 0;
+    overflow: hidden;
+}
+.sub-menu.active{
+    height: 100%;
+    animation-name: show-link;
+    animation-duration: 0.4s;
+}
+.sub-menu a.nav-link:hover{
+    background-color: #ffffff;
+    color: black;
+}
+@keyframes show-link {
+    0%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes arrow {
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font Awesome style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main style -->
+    <link rel="stylesheet" href="content/style/style.css">
+    <title>side bar</title>
+</head>
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="row py-2">
+                <div class="col-sm-12 border-bottom">
+                    <button class="btn-bars btn btn-danger m-2"><i class="fa-solid fa-bars"></i></button>
+                </div>
+                <div class="col-sm-12">
+                    <h1 class="display-4 text-center text-white">Side Bar</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="side-bar">
+            <div id="icon" class="text-end py-3 border-bottom">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link text-white py-3" href="#">
+                        link 1
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="has-sub-menu d-flex justify-content-between align-items-center nav-link text-white py-3" href="#">
+                        Show
+                        <span class="arrow-list">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </a>
+                    <ul class="nav sub-menu flex-column bg-black">
+                        <li class="ms-3">
+                            <a class="nav-link display-6" href="#">First</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="nav-link display-6" href="#">secund</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="nav-link display-6" href="#">third</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white py-3" href="#">link 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="has-sub-menu d-flex justify-content-between align-items-center nav-link text-white py-3" href="#">
+                        Show
+                        <span class="arrow-list">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </a>
+                    <ul class="nav sub-menu flex-column bg-black">
+                        <li class="ms-3">
+                            <a class="nav-link display-6" href="#">First</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="nav-link display-6" href="#">secund</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="nav-link display-6" href="#">third</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white py-3" href="#">link 5</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- font Awesome js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- main file js -->
+    <script src="content/js/app.js"></script>
+</body>
+</html>
